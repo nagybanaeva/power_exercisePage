@@ -6,14 +6,41 @@ box-sizing: border-box;
     background-color: blueviolet;
     opacity: 0.8;
     width: 100vw;
-    height: 10vh;
+    height: 15vh;
 }
 
 #navlines {
-    float: right;
     height: 4.5vh;
     margin: 1rem;
+    margin-right: 7rem;
 }
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  float: right;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
 
 .background {
     display: block;
@@ -23,7 +50,6 @@ box-sizing: border-box;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    opacity: 0.85;
     color: whitesmoke;
     font-family: 'Mali', cursive;
     font-size: 3rem;
@@ -63,10 +89,16 @@ box-sizing: border-box;
 .footer {
     position: absolute;
     bottom: 0;
+    font-size: 1.5rem;
     }
-    .background {
+.background {
     font-size: 5rem;
     }
+}
+
+@media (min-width: 1366px){
+.main p {
+    font-size: 1.5rem;}
 } 
 
 @media (min-width: 768px) and (max-width:1000px){
