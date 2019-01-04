@@ -1,0 +1,78 @@
+* {
+box-sizing: border-box;
+}
+
+.header {
+    background-color: blueviolet;
+    opacity: 0.8;
+    width: 100vw;
+    height: 10vh;
+}
+
+#navlines {
+    float: right;
+    height: 4.5vh;
+    margin: 1rem;
+}
+
+.background {
+    display: block;
+    width: 100vw;
+    height: 40vh;
+    background-image: url(../img/beautiful-country-countryside-414061.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.85;
+    color: whitesmoke;
+    font-family: 'Mali', cursive;
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.icons-container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons-container img {
+    height: 4rem;
+    margin: 1.5rem;
+}
+
+.main p {
+    text-align: center;
+    font-family: 'Niramit', sans-serif;
+    font-size: 1rem;
+    padding: 2rem;
+    line-height: 200%;
+}
+
+.footer {
+    width: 100vw;
+    background-color: darkseagreen;
+    text-align: center;
+    padding: 3rem;
+}
+
+@media (min-width: 1024px){
+    
+.footer {
+    position: absolute;
+    bottom: 0;
+    }
+    .background {
+    font-size: 5rem;
+    }
+} 
+
+@media (min-width: 768px) and (max-width:1000px){
+.main p {
+    font-size: 1.5rem;
+    padding: 2rem;
+    line-height: 200%;
+    }
+}
