@@ -1,10 +1,12 @@
+
+@charset "utf-8";
+
 * {
 box-sizing: border-box;
 }
 
 .header {
     background-color: blueviolet;
-    opacity: 0.8;
     width: 100vw;
     height: 15vh;
 }
@@ -47,14 +49,14 @@ box-sizing: border-box;
     width: 100vw;
     height: 40vh;
     background-image: url(../img/beautiful-country-countryside-414061.jpg);
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-position: center;
     background-size: cover;
     color: whitesmoke;
     font-family: 'Mali', cursive;
-    font-size: 3rem;
+    font-size: 10vh;
     text-align: center;
-    padding-top: 3rem;
+    padding: 2rem;
 }
 
 .icons-container {
@@ -87,9 +89,10 @@ box-sizing: border-box;
 @media (min-width: 1024px){
     
 .footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     font-size: 1.5rem;
+     padding: 2rem;
     }
 .background {
     font-size: 5rem;
