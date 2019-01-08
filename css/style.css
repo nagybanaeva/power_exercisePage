@@ -8,13 +8,18 @@ box-sizing: border-box;
 .header {
     background-color: blueviolet;
     width: 100vw;
-    height: 15vh;
+    height: 18vh;
 }
 
 #navlines {
     height: 4.5vh;
-    margin: 1rem;
-    margin-right: 7rem;
+    margin: 1.5rem;
+}
+
+.dropbtn {
+  color: white;
+  border: none;
+  cursor: pointer;
 }
 
 .dropdown {
@@ -26,6 +31,7 @@ box-sizing: border-box;
 .dropdown-content {
   display: none;
   position: absolute;
+  right: 0;
   background-color: #f1f1f1;
   min-width: 160px;
   z-index: 1;
@@ -38,11 +44,17 @@ box-sizing: border-box;
   display: block;
 }
 
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
 
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
+.dropdown:hover .dropbtn {
+    background-color: darkseagreen;
+}
 
 .background {
     display: block;
@@ -52,11 +64,16 @@ box-sizing: border-box;
     background-repeat: repeat;
     background-position: center;
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span {
     color: whitesmoke;
-    font-family: 'Mali', cursive;
     font-size: 10vh;
-    text-align: center;
-    padding: 2rem;
+    font-family: 'Mali', cursive;
+    padding: 1rem;
 }
 
 .icons-container {
@@ -89,25 +106,18 @@ box-sizing: border-box;
 @media (min-width: 1024px){
     
 .footer {
-    position: fixed;
-    bottom: 0;
-    font-size: 1.5rem;
-     padding: 2rem;
+    font-size: 2rem;
+    padding: 2rem;
     }
 .background {
     font-size: 5rem;
     }
 }
 
-@media (min-width: 1366px){
+@media (min-width: 768px) {
 .main p {
-    font-size: 1.5rem;}
-} 
-
-@media (min-width: 768px) and (max-width:1000px){
-.main p {
-    font-size: 1.5rem;
-    padding: 2rem;
+    font-size: 2rem;
+    padding: 3rem;
     line-height: 200%;
     }
 }
